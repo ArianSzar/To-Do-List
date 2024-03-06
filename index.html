@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/custom.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/bg.css" />
+    <script src="https://use.fontawesome.com/28a1f18633.js"></script>
+    <title>To-Do List</title>
+  </head>
+  <body class="flex flex-col items-center justify-center h-dvh bg">
+    <header></header>
+    <main class="flex items-center justify-center font-main">
+      <div>
+        <!-- Styles and Elements Start From Here -->
+        <div
+          class="bg-black w-[47rem] min-h-[33rem] h-fit max-h-fit rounded-lg bg-opacity-30 backdrop-blur-sm space-y-4 overflow-y-scroll overflow-x-auto"
+        >
+          <!-- Input Section -->
+          <div class="flex items-center justify-center mx-8">
+            <form class="w-[90%] flex justify-center items-center">
+              <input
+                required
+                autocomplete="off"
+                class="flex justify-center items-center unset px-1 bg-white bg-opacity-30 mt-6 rounded-lg w-[95%] h-[2rem] indent-4 font-bold"
+                type="text"
+                name="todoText"
+                id="todoText"
+              />
+            </form>
+            <div
+              class="mt-6 w-[10%] justify-center items-center flex text-center space-x-1"
+            >
+              <button
+                class="bg-white bg-opacity-30 size-8 p-1 rounded-[50%] flex justify-center items-center"
+                type="submit"
+                id="submit"
+              >
+                <i class="text-center fa fa-plus"></i>
+              </button>
+              <button
+                id="trash"
+                class="bg-white bg-opacity-30 size-8 p-1 rounded-[50%] flex justify-center items-center"
+              >
+                <i class="fa fa-trash"></i>
+              </button>
+            </div>
+          </div>
+          <!-- To-Do List Section -->
+          <div class="flex justify-center items-center h-[28rem] mx-8">
+            <section
+              id="listSection"
+              class="w-[95%] h-[95%] rounded-lg pl-3 space-y-2"
+            >
+              <div
+                class="bg-white bg-opacity-30 min-w-fit w-fit max-w-[36rem] h-[2.2rem] rounded-2xl items-center justify-center py-5 px-5 space-x-2 hidden"
+              >
+                <div class="flex items-center justify-center">
+                  <span class="text-lg bg-transparent"></span>
+                </div>
+                <div class="flex items-center justify-center">
+                  <button class="flex items-center justify-center removeItem">
+                    <i class="fa fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

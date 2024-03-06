@@ -1,0 +1,14 @@
+.bg {
+  background-color: rgba(78, 2, 195, 1);
+  background-image: radial-gradient(
+      at 15.394% 14.932%,
+      rgba(0, 77, 255, 1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      at 100% 36.425%,
+      rgba(187, 19, 97, 0.55) 0%,
+      transparent 50%
+    ),
+    radial-gradient(at 33.333% 100%, rgba(120, 0, 255, 1) 0%, transparent 50%);
+}
