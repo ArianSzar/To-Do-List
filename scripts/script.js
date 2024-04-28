@@ -13,8 +13,11 @@ window.addEventListener("load", () => {
 btn_submit.addEventListener("click", (e) => {
   e.preventDefault();
   const todoText = input_todoText.value;
-  saveTodoToLocalStorage(todoText);
-  createTodoElement(todoText);
+  if (todoText) {
+    saveTodoToLocalStorage(todoText);
+    createTodoElement(todoText);
+    input_todoText.value = "";
+  }
 });
 
 function createTodoElement(todoText) {
